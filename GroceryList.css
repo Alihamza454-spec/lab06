@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+
+class GroceryItem
+{
+    public string Name { get; set; }
+    public double Price { get; set; }
+
+    public GroceryItem(string name, double price)
+    {
+        Name = name;
+        Price = price;
+    }
+
+    public override string ToString()
+    {
+        return $"Item: {Name}, Price: ${Price:F2}";
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Create a list of grocery items
+        List<GroceryItem> groceryList = new List<GroceryItem>
+        {
+            new GroceryItem("Apples", 1.99),
+            new GroceryItem("Bread", 2.49),
+            new GroceryItem("Milk", 3.29),
+            new GroceryItem("Eggs", 2.79),
+            new GroceryItem("Rice", 1.25)
+        };
+
+        Console.WriteLine("Grocery Store Items:\n");
+
+        // Display the list
+        foreach (GroceryItem item in groceryList)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
