@@ -30,7 +30,11 @@ class Program
             new GroceryItem("Milk", 3.29),
             new GroceryItem("Eggs", 2.79),
             new GroceryItem("Rice", 1.25)
+           2-Branch
             new GroceryItem("Orangas", 1.25)
+
+            new GroceryItem("Bananas", 1.25)
+        main
         };
 
         Console.WriteLine("Grocery Store Items:\n");
